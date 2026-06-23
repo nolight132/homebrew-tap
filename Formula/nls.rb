@@ -1,8 +1,8 @@
 class Nls < Formula
   desc "Nushell-style ls for bash, zsh, and fish"
   homepage "https://github.com/nolight132/nls"
-  url "https://github.com/nolight132/nls/archive/refs/tags/v0.1.8.tar.gz"
-  sha256 "c97fcc2a3245c61ba6f1a214297aa83efda1717d861e9f47cdb6089a9c251215"
+  url "https://github.com/nolight132/nls/archive/refs/tags/v0.1.9.tar.gz"
+  sha256 "f24312ea36e73417939db84fbbd702b5ec721b2bec94bb14da0e6623fce38888"
   license "MIT"
 
   depends_on "go" => :build
