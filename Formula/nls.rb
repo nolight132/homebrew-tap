@@ -8,7 +8,8 @@ class Nls < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(output: bin/"nls"), "./cmd/nls"
+    ldflags = "-s -w -X github.com/nolight132/nls/internal/version.Version=#{version}"
+    system "go", "build", *std_go_args(ldflags: ldflags, output: bin/"nls"), "./cmd/nls"
   end
 
   test do
