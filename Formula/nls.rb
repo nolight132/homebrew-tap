@@ -1,8 +1,8 @@
 class Nls < Formula
   desc "A modern ls with useful tables"
   homepage "https://github.com/nolight132/nls"
-  url "https://github.com/nolight132/nls/archive/refs/tags/v0.9.0.tar.gz"
-  sha256 "74156789dc6d4cac278176135eef48af8f4176096e699fe0db5125df1a83c5a3"
+  url "https://github.com/nolight132/nls/archive/refs/tags/v0.10.0.tar.gz"
+  sha256 "6a4296916d4933df7f909aebec9745d1cdd766091f56be5b2fc37bd4f08df465"
   license "MIT"
 
   depends_on "go" => :build
