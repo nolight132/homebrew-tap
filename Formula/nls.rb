@@ -10,6 +10,11 @@ class Nls < Formula
   def install
     ldflags = "-s -w -X github.com/nolight132/nls/internal/version.Version=#{version}"
     system "go", "build", *std_go_args(ldflags: ldflags, output: bin/"nls"), "./cmd/nls"
+
+    system bin/"nls", "--completion", "bash", "--completion", "zsh", "--completion", "fish"
+    bash_completion.install "completion.bash" => "nls"
+    zsh_completion.install "completion.zsh" => "_nls"
+    fish_completion.install "completion.fish" => "nls.fish"
   end
 
   test do
