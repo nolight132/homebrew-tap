@@ -4,7 +4,7 @@ cask "sonora" do
 
   url "https://github.com/nolight132/sonora/releases/download/v#{version}/sonora-v#{version}-macos.dmg"
   name "Sonora"
-  desc "Minimal native Spotify client built with Rust and GPUI"
+  desc "Native music streaming client, built with Rust and GPUI"
   homepage "https://github.com/nolight132/sonora"
 
   depends_on macos: ">= :big_sur"
