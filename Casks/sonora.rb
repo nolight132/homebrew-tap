@@ -1,11 +1,11 @@
 cask "sonora" do
-  version "0.31.0"
-  sha256 "e6db63b1866e67956d27cf0ca0071734bc3db18efdb0a8ef343112b33f3137ac"
+  version "0.32.0"
+  sha256 "e8c023eaae78ef20e6773a89232b9f5b3bb28626ea023e79e9f9c921c9dd9d0f"
 
-  url "https://github.com/nolight132/sonora/releases/download/v#{version}/sonora-v#{version}-macos.dmg"
+  url "https://github.com/sonorahq/sonora/releases/download/v#{version}/sonora-v#{version}-macos.dmg"
   name "Sonora"
   desc "Native music streaming client, built with Rust and GPUI"
-  homepage "https://github.com/nolight132/sonora"
+  homepage "https://github.com/sonorahq/sonora"
 
   depends_on macos: ">= :big_sur"
 
