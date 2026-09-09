@@ -1,6 +1,6 @@
 cask "sonora" do
-  version "0.32.0"
-  sha256 "e8c023eaae78ef20e6773a89232b9f5b3bb28626ea023e79e9f9c921c9dd9d0f"
+  version "0.33.0"
+  sha256 "93456063e1c09c1b93f740c477195f21fa524086156d9e805f8e1ce3ff2e495b"
 
   url "https://github.com/sonorahq/sonora/releases/download/v#{version}/sonora-v#{version}-macos.dmg"
   name "Sonora"
