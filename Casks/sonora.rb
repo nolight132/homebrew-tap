@@ -7,7 +7,7 @@ cask "sonora" do
   desc "Native music streaming client, built with Rust and GPUI"
   homepage "https://github.com/sonorahq/sonora"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "Sonora.app"
 
