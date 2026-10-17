@@ -1,9 +1,9 @@
 cask "tokativ" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "0.3.0"
-  sha256 arm:   "f896f726996ab6084fd3fe3af37623ddf05aa6364db531837dd97e1aaed48fca",
-         intel: "de87ef0d50b088869b50fd10675fff408a96c2c2f25cbef93c1a1701db0798c0"
+  version "0.3.1"
+  sha256 arm:   "4d949c1f47060f87b55722afbb08157351b75d6c125d8f7a2532f34dd6d06720",
+         intel: "6a1cfae47f97b3707cd26611a5c13e28f235e76f1e89e44da23d31fddbcc19eb"
 
   url "https://github.com/nolight132/tokativ/releases/download/v#{version}/tokativ-v#{version}-#{arch}-apple-darwin.app.tar.gz"
   name "Tokativ"
@@ -15,6 +15,7 @@ cask "tokativ" do
     strategy :github_latest
   end
 
+  auto_updates true
   depends_on :macos
 
   app "Tokativ.app"
