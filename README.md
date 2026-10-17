@@ -11,3 +11,7 @@ brew install sonora
 brew tap nolight132/tap
 brew install nls
 ```
+
+```sh
+brew install --cask nolight132/tap/tokativ
+```
