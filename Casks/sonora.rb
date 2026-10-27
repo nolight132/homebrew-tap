@@ -7,9 +7,15 @@ cask "sonora" do
   desc "Native music streaming client, built with Rust and GPUI"
   homepage "https://github.com/sonorahq/sonora"
 
+  conflicts_with cask: "sonora-nightly"
   depends_on macos: :big_sur
 
   app "Sonora.app"
+
+  zap trash: [
+    "~/Library/Application Support/sonora",
+    "~/Library/Caches/sonora",
+  ]
 
   caveats <<~EOS
     Sonora is signed ad-hoc rather than notarized, so Gatekeeper refuses to open it
@@ -18,9 +24,4 @@ cask "sonora" do
       xattr -dr com.apple.quarantine "#{appdir}/Sonora.app"
 
   EOS
-
-  zap trash: [
-    "~/Library/Application Support/sonora",
-    "~/Library/Caches/sonora",
-  ]
 end
