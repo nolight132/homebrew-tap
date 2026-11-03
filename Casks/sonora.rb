@@ -4,7 +4,7 @@ cask "sonora" do
 
   url "https://github.com/sonorahq/sonora/releases/download/v#{version}/sonora-v#{version}-macos.dmg"
   name "Sonora"
-  desc "Native music streaming client, built with Rust and GPUI"
+  desc "A native, familiar music streaming client"
   homepage "https://github.com/sonorahq/sonora"
 
   conflicts_with cask: "sonora-nightly"
