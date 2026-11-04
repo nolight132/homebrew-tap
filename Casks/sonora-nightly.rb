@@ -1,6 +1,6 @@
 cask "sonora-nightly" do
-  version "0.47.0-nightly.20261103"
-  sha256 "80daff2f07d91c57058b899bd0485703f4a987628487acd269b466daeb24222c"
+  version "0.47.0-nightly.20261104"
+  sha256 "de090edaeec83fc97217e0bb6e453319d602db2b84d05e38a1f98b4f5955516b"
 
   url "https://github.com/sonorahq/sonora/releases/download/nightly/sonora-nightly-macos.dmg"
   name "Sonora Nightly"
